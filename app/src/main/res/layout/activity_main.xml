@@ -1,11 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/text_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_Header"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+    />
 
+        <EditText
+            android:id="@+id/edit_Distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_Distance"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+        />
+        <TextView
+            android:id="@+id/text_total_km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Total_Km"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+        />
 
+        <EditText
+            android:id="@+id/edit_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_Price"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/text_Price_Per_Liter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Price_Per_Liter"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            />
 
+        <EditText
+            android:id="@+id/edit_Autonomy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_Autonomy"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/text_Autonomy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Autonomy"
+            android:textAlignment="center"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/text_Ans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Ans"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+        />
+
+        <TextView
+            android:id="@+id/text_Label_Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Label_Result"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="12dp"
+        />
+
+        <Button
+            android:id="@+id/button_Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:text="@string/button_Calculate"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="50dp"
+        />
 </LinearLayout>

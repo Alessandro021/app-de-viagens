@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">appDeViagens</string>
+    <string name="text_Header">Aplicativo para calcular o consumo de viagens</string>
+    <string name="edit_Distance">Distancia</string>
+    <string name="text_Total_Km">Total em quilometros</string>
+    <string name="edit_Price">Preço</string>
+    <string name="text_Price_Per_Liter">Preço por litro</string>
+    <string name="edit_Autonomy">Autonomia</string>
+    <string name="text_Autonomy">Quilometros por litro</string>
+    <string name="text_Ans">Seu gasto total seria de:</string>
+    <string name="text_Label_Result">R$ 0</string>
+    <string name="button_Calculate">Calcular</string>
 </resources>
