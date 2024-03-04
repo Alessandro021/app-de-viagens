@@ -10,4 +10,6 @@
     <string name="text_Ans">Seu gasto total seria de:</string>
     <string name="text_Label_Result">R$ 0</string>
     <string name="button_Calculate">Calcular</string>
+    <string name="validation_fill_all_fields">Preencha todos os campos</string>
+    <string name="value_invalid_field_Autonomia">O campo "Autonomia" não pode ser zero</string>
 </resources>

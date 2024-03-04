@@ -21,15 +21,31 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    private fun isValid(): Boolean{
+        return (binding.editDistance.text.toString() != "" &&
+                binding.editPrice.text.toString() != "" &&
+                binding.editAutonomy.text.toString() != "")
+    }
+
     private fun calculate(){
+        if(isValid()){
+            val distance = binding.editDistance.text.toString().toFloat()
+            val price = binding.editPrice.text.toString().toFloat()
+            val autonomy = binding.editAutonomy.text.toString().toFloat()
 
-        val distance = binding.editDistance.text.toString().toFloat()
-        val price = binding.editPrice.text.toString().toFloat()
-        val autonomy = binding.editAutonomy.text.toString().toFloat()
+            if(autonomy == 0f){
+                Toast.makeText(this, R.string.value_invalid_field_Autonomia , Toast.LENGTH_SHORT).show()
+                binding.textLabelResult.text = "R$ 0"
+            } else {
+                val totalValue = (price * distance) / autonomy
+                binding.textLabelResult.text = "R$ ${"%.2f".format(totalValue)}"
+            }
 
-        val totalValue = (price * distance) / autonomy
-        binding.textLabelResult.text = "R$ ${"%.2f".format(totalValue)}"
-        //Toast.makeText(this, totalValueStr, Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, R.string.validation_fill_all_fields, Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 
 
